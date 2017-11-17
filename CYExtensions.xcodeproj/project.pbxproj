@@ -10,6 +10,7 @@
 		504B9CF41FBF7A2100CAB017 /* CYExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504B9CEA1FBF7A2100CAB017 /* CYExtensions.framework */; };
 		504B9CF91FBF7A2100CAB017 /* CYExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504B9CF81FBF7A2100CAB017 /* CYExtensionsTests.swift */; };
 		504B9CFB1FBF7A2100CAB017 /* CYExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 504B9CED1FBF7A2100CAB017 /* CYExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		504B9D051FBF80E200CAB017 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504B9D041FBF80E200CAB017 /* UIView+Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		504B9CF31FBF7A2100CAB017 /* CYExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		504B9CF81FBF7A2100CAB017 /* CYExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYExtensionsTests.swift; sourceTree = "<group>"; };
 		504B9CFA1FBF7A2100CAB017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504B9D041FBF80E200CAB017 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				504B9CED1FBF7A2100CAB017 /* CYExtensions.h */,
 				504B9CEE1FBF7A2100CAB017 /* Info.plist */,
+				504B9D041FBF80E200CAB017 /* UIView+Border.swift */,
 			);
 			path = CYExtensions;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					504B9CE91FBF7A2100CAB017 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					504B9CF21FBF7A2100CAB017 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504B9D051FBF80E200CAB017 /* UIView+Border.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		504B9CFF1FBF7A2100CAB017 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.codeyard.CYExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		504B9D001FBF7A2100CAB017 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		504B9D021FBF7A2100CAB017 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CSD326H7VF;
 				INFOPLIST_FILE = CYExtensionsTests/Info.plist;
@@ -390,6 +399,7 @@
 		504B9D031FBF7A2100CAB017 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CSD326H7VF;
 				INFOPLIST_FILE = CYExtensionsTests/Info.plist;
