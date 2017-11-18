@@ -9,18 +9,18 @@
 import UIKit
 
 extension String {
-    
-    public var html2AttributedString: NSMutableAttributedString? {
-        guard let data = data(using: .utf8) else { return nil }
+    var html2AttributedString: NSAttributedString? {
         do {
-            return try NSMutableAttributedString(data: data, options: [NSDocumentTypeDocumentOption: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue], documentAttributes: nil)
-        } catch let error as NSError {
-            print(error.localizedDescription)
-            return  nil
+            return try NSAttributedString(data: Data(utf8),
+                                          options: [.documentType: NSAttributedString.DocumentType.html,
+                                                    .characterEncoding: String.Encoding.utf8.rawValue],
+                                          documentAttributes: nil)
+        } catch {
+            print("error: ", error)
+            return nil
         }
     }
-    
-    public var html2String: String {
+    var html2String: String {
         return html2AttributedString?.string ?? ""
     }
 }
