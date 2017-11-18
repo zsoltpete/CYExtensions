@@ -17,7 +17,7 @@ extension String {
 
      -  returns: nil if formatting is failed, a Date from the String itself
      */
-    func toDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> Date? {
+    public func toDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> Date? {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
