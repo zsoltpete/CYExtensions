@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIViewController {
+extension UIView {
     
     /**
      Create an image from the view itself
