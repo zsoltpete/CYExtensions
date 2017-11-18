@@ -9,8 +9,7 @@
 import UIKit
 
 extension String {
-    
-    public var html2AttributedString: NSAttributedString? {
+    var html2AttributedString: NSAttributedString? {
         do {
             return try NSAttributedString(data: Data(utf8),
                                           options: [.documentType: NSAttributedString.DocumentType.html,
@@ -21,8 +20,7 @@ extension String {
             return nil
         }
     }
-    
-    public var html2String: String {
+    var html2String: String {
         return html2AttributedString?.string ?? ""
     }
 }
