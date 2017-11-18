@@ -8,9 +8,13 @@
 
 import Foundation
 
-
 extension Array {
     
+    /**
+     Returns an element of the array, if the array is not empty.
+     
+     - returns: Nil if array is empty, or an element of the array
+     */
     public func sample() -> Element? {
         if isEmpty { return nil }
         let index = Int(arc4random_uniform(UInt32(self.count)))

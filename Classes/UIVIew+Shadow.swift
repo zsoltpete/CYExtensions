@@ -23,17 +23,17 @@ extension UIView {
     }
     
     /**
-    Add shadow around the view.
+     Add shadow around the view.
      
-    @param shadowColor The color of the shadow
-    @param shadowOffset The offset of the shadow
-    @param shadowOpacity The opacity of the shadow
-    @param shadowRadius The radius of the shadow
-    */
+     - parameter shadowColor: The color of the shadow
+     - parameter shadowOffset: The offset of the shadow
+     - parameter shadowOpacity: The opacity of the shadow
+     - parameter shadowRadius: The radius of the shadow
+     */
     public func addShadow(shadowColor: CGColor = UIColor.black.cgColor,
-                   shadowOffset: CGSize = CGSize(width: 0.0, height: 1.0),
-                   shadowOpacity: Float = 0.12,
-                   shadowRadius: CGFloat = 1.0) {
+                          shadowOffset: CGSize = CGSize(width: 0.0, height: 1.0),
+                          shadowOpacity: Float = 0.12,
+                          shadowRadius: CGFloat = 1.0) {
         layer.shadowColor = shadowColor
         layer.shadowOffset = shadowOffset
         layer.shadowOpacity = shadowOpacity

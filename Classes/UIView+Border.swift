@@ -11,6 +11,12 @@ import UIKit
 
 extension UIView {
     
+    /**
+     Add border around the view.
+     
+     - parameter color: The color of the border
+     - parameter width: The width of the border
+     */
     public func addBorder(color: UIColor = .black, width: CGFloat = 1.0){
         self.layer.borderColor = color.cgColor
         self.layer.borderWidth = width
