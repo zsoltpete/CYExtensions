@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImage {
     
-    func transform(withNewColor color: UIColor) -> UIImage {
+    public func transform(withNewColor color: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         
         let context = UIGraphicsGetCurrentContext()!
@@ -29,7 +29,7 @@ extension UIImage {
         return newImage
     }
     
-    func maskWithColor(color: UIColor) -> UIImage? {
+    public func maskWithColor(color: UIColor) -> UIImage? {
         
         let maskLayer = CALayer()
         maskLayer.bounds = CGRect(x: 0, y: 0, width: size.width, height: size.height)

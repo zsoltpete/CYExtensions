@@ -10,7 +10,7 @@ import UIKit
 
 extension CALayer {
     
-    func doMask(by imageMask: UIImage) {
+    public func doMask(by imageMask: UIImage) {
         let maskLayer = CAShapeLayer()
         maskLayer.bounds = CGRect(x: 0, y: 0, width: imageMask.size.width, height: imageMask.size.height)
         bounds = maskLayer.bounds
@@ -19,7 +19,7 @@ extension CALayer {
         mask = maskLayer
     }
     
-    func toImage() -> UIImage?{
+    public func toImage() -> UIImage?{
         UIGraphicsBeginImageContextWithOptions(bounds.size,
                                                isOpaque,
                                                UIScreen.main.scale)
