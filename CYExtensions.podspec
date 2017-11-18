@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CYExtensions"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "Extension collection for better development"
   s.homepage     = "http://codeyard.eu"
   s.license      = {type: "MIT", text: "DO NOT COPY!"}
